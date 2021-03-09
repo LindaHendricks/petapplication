@@ -1,0 +1,14 @@
+<h1>Search for Pets by Name:</h1>
+    <%= form_tag(puppieslist_path, method: :get) do %>
+        <%= text_field_tag(:search, params[:search]) %> 
+        <%= submit_tag ("Search")%> 
+<% end %>  
+
+<% @pets.each do |pet| %>
+ <ul> 
+   <li> <%= pet.name %> </li>
+ </ul> 
+<%end%>
+
+
+         
