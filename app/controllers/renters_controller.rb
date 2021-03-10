@@ -27,7 +27,6 @@ class RentersController < ApplicationController
         @renters = Renter.all
         @bookings = Booking.all
         current_renter = Renter.find_by(username: params[:username])        
-       byebug
     end
  
     private

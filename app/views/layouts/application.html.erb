@@ -24,7 +24,8 @@
     <ul>
       <% if logged_in? %>
       <li><%=link_to "profile", '/renters/profile' %>
-      <%=link_to "browse", '/pets/petslist' %><li>
+      <%=link_to "browse", '/pets/petslist' %>
+      <%=link_to "logout", '/pets/petslist' %>
     <%end%>
     </ul>
   </div>

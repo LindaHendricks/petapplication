@@ -1,6 +1,6 @@
 header {
     background: #FD6156;
-    padding: 30px;
+    padding: 32px;
     ul {
       margin: 0;
       padding: 0;
@@ -9,15 +9,20 @@ header {
     a {
       text-decoration: none;
       font-size: 22px;
-      font-weight: bold;
+      font-weight: normal;
       color: white;
     }
   }
   
   .left-nav {
     float: left;
+        color: #FFFFFF;
+        margin:-15px
   }
   
   .right-nav {
     float: right;
+    color: #FFFFFF;
+        margin:-15px 
   }
+
