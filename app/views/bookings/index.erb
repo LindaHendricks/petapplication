@@ -1,0 +1,17 @@
+<h1>Bookings List</h1>
+
+
+<h2>Here are the bookings by date and location</h2>
+
+
+<% @bookings.each do |booking| %>
+<%= booking.date_location %><br>
+<%end%>
+
+
+
+<% @my_bookings.each do |booking| %>
+<%= booking %><br>
+<%end%>
+
+

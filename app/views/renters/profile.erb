@@ -5,10 +5,14 @@
 
 
 
-<h2>List of all users:</h2>
+Username: <%=current_renter.username%><li>
+Name: <%=current_renter.name%><li>
+Address: <%=current_renter.address%><li>
+Age: <%=current_renter.age%><li>
+Phone Number: <%=current_renter.phone_number%><li>
+Picture: <%=current_renter.picture%>
 
-<% @renters.each do |renter| %>
- <ul> 
-   <li>-Username: <%= renter.username %> </li>
- </ul> 
-<%end%>
+<h3>Here are your bookings: <%=  %></h3>
+
+
+

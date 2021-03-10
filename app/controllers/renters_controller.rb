@@ -10,7 +10,7 @@ class RentersController < ApplicationController
     def create
         @renter = Renter.create(new_renter_params)
         session[:renter_id] = @renter.id
-        redirect_to '/renters/profile'
+        redirect_to '/pets/index'
     end
 
     def handle_login
@@ -25,11 +25,14 @@ class RentersController < ApplicationController
 
     def profile        
         @renters = Renter.all
+        @bookings = Booking.all
+        current_renter = Renter.find_by(username: params[:username])        
+       byebug
     end
  
     private
 
     def new_renter_params
-        params.require(:renter).permit(:username, :password)
+        params.require(:renter).permit(:name, :address, :age, :phone_number, :username, :password)
     end
 end
