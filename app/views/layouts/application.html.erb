@@ -11,6 +11,27 @@
   </head>
 
   <body>
+
+  <header class='clearfix'>
+  <div class="left-nav">
+    <ul>
+      <li><%= link_to "rent-a-puppy", '/renters/welcome' %></li>
+      
+    </ul>
+  </div>
+
+   <div class="right-nav">
+    <ul>
+      <% if logged_in? %>
+      <li><%=link_to "profile", '/renters/profile' %>
+      <%=link_to "browse", '/pets/petslist' %><li>
+    <%end%>
+    </ul>
+  </div>
+</header
+
     <%= yield %>
   </body>
 </html>
+
+

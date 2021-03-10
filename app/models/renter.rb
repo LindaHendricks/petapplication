@@ -6,4 +6,6 @@ class Renter < ApplicationRecord
     has_many :animals, through: :reviews
 
     has_secure_password
+
+    validates :username, presence: true,   uniqueness: true
 end

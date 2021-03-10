@@ -1,0 +1,14 @@
+<% if logged_in? %>
+    <h1><%= current_renter.username.capitalize %>'s Profile</h1>
+    <h2>You are logged In, <%= current_renter.username %></h2>
+<%end%>
+
+
+
+<h2>List of all users:</h2>
+
+<% @renters.each do |renter| %>
+ <ul> 
+   <li>-Username: <%= renter.username %> </li>
+ </ul> 
+<%end%>

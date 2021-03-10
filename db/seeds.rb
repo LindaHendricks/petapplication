@@ -19,16 +19,16 @@ pet2 = Pet.create(name: "Bijou", description: "Curly diva", age:3, color: "White
 pet3 = Pet.create(name: "Julio", description: "Speed and chic", age:1, color: "Silver", picture:" ", location: "Milano", breed: breed4)
 pet4 = Pet.create(name: "John", description: "Charming and love spagetti", age:2, color: "black and white", picture:" ", location: "Florida", breed: breed3)
 
-Review.create(comment: "That was an horrible puppy!! Don’t rent him is spoiled!", date:"24th of december", rating:1, animal: pet2, human: renter2) 
-Review.create(comment: "I love him so much, I bought him!",  date:"12th of July",rating: 5, animal: pet2, human: renter2)
-Review.create(comment: "Great", rating: 4, date: "9th of March", animal: pet4, human: renter1)
-Review.create(comment: "I loved the experience", date:"4th of July" , rating: 5, animal: pet3, human: renter3)
-Review.create(comment: "A wonderful piece of sweetness", date:"14th of July", rating: 5, animal: pet4, human: renter4)
+# Review.create(comment: "That was an horrible puppy!! Don’t rent him is spoiled!", date:"24th of december", rating:1, animal: pet2, human: renter2) 
+# Review.create(comment: "I love him so much, I bought him!",  date:"12th of July",rating: 5, animal: pet2, human: renter2)
+# Review.create(comment: "Great", rating: 4, date: "9th of March", animal: pet4, human: renter1)
+# Review.create(comment: "I loved the experience", date:"4th of July" , rating: 5, animal: pet3, human: renter3)
+# Review.create(comment: "A wonderful piece of sweetness", date:"14th of July", rating: 5, animal: pet4, human: renter4)
 
-Booking.create(location: "Paris", date:"24th of december", pet: pet1, renter: renter2)  
-Booking.create(location: "Paris", date:"12th of July" , pet: pet2, renter: renter2)
-Booking.create(location: "Paris", date:"9th of March", pet: pet4, renter: renter1)
-Booking.create(location: "Paris", date:"4th of July" , pet: pet3, renter: renter3)
-Booking.create(location: "Paris", date:"14th of July", pet: pet4, renter: renter4)
+# Booking.create(location: "Paris", date:"24th of december", pet: pet1, renter: renter2)  
+# Booking.create(location: "Paris", date:"12th of July" , pet: pet2, renter: renter2)
+# Booking.create(location: "Paris", date:"9th of March", pet: pet4, renter: renter1)
+# Booking.create(location: "Paris", date:"4th of July" , pet: pet3, renter: renter3)
+# Booking.create(location: "Paris", date:"14th of July", pet: pet4, renter: renter4)
 
 puts "We Got This right ?! SEEDED!!!"
